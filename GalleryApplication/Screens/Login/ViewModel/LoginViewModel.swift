@@ -35,4 +35,8 @@ extension LoginViewModel {
         }
 
     }
+
+//            guard let jsonResponse = response as? [String: Any] else { return }
+//            guard let jsonData = try? JSONSerialization.data(withJSONObject: jsonResponse) else { return }
+//            guard let signInModel : SignInWithEmailData = try? JSONDecoder().decode(SignInWithEmailData.self, from: jsonData) else { return GeneralUtility.showToast(message: "data not convert")}
 }

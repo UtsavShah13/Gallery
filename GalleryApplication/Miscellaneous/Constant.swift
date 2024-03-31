@@ -24,13 +24,11 @@ struct StoryBoard {
 
 struct Controller {
     static let loginVC = "LoginViewController"
-    static let galleryVC = "GalleryViewController"
-    static let profileVC = "ProfileViewController"
 }
 
 // MARK: Cell
 struct Cell {
- static let galleryCollectionViewCell = "GalleryCollectionViewCell"
+
 }
 
 // MARK: Header

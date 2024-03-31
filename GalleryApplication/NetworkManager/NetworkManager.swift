@@ -9,7 +9,7 @@ import UIKit
 import SystemConfiguration
 
 enum API: String {
-    case baseUrl = "https://pixabay.com/api/"
+    case baseUrl = "https://www.soulace.online/api/"
 }
 
 enum ContentType: String {
@@ -270,8 +270,12 @@ class NetworkManager: NSObject {
     
     func request(with method: RequestType, contentType: ContentType, path: String, params: Any?) -> URLRequest {
         var url: URL!
-//            url = URL(string: path, relativeTo: self.baseUrl)
-        url =  self.baseUrl
+//        if path.contains(API.googlePhoto.rawValue) {
+//            // Gift card api
+//            url = URL(string: path)
+//        } else {
+            url = URL(string: path, relativeTo: self.baseUrl)
+//        }
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.allHTTPHeaderFields = (path.isEmpty) ? [:] : defaultHeaders
