@@ -25,6 +25,8 @@ class ProfileViewController: UIViewController {
         let userEmail = Utils.shared.getEmailId()
         emailLabel.text = userEmail
         nameLabel.text = userName
+        navigationItem.title = "Profile"
+        self.navigationController?.navigationBar.tintColor = .black
     }
     
     @IBAction func logoutAction(_ sender: UIButton) {
