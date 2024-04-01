@@ -32,8 +32,9 @@ class LoginViewController: UIViewController {
     @IBAction func googleLogin(_ sender: UIButton) {
         viewModel.performApiCallingForSocialSignIn(controller: self)
     }
-    
 }
+
+// MARK: - LoginViewModelDelegate
 
 extension LoginViewController: LoginViewModelDelegate {
     

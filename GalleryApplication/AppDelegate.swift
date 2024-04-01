@@ -16,10 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var autorization: String?
     let defaults = UserDefaults.standard
     
+    static var shared: AppDelegate? {
+        return UIApplication.shared.delegate as? AppDelegate
+    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
         checkRegistrationFlow()
         setupThirdParty()
         return true
@@ -30,29 +31,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]
     ) -> Bool {
         var handled: Bool
-        
         handled = GIDSignIn.sharedInstance.handle(url)
         if handled {
             return true
         }
-        
-        // Handle other custom URL types.
-        
-        // If not handled by this app, return false.
         return false
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
+    }
         
-    }
-    
-    
-    class var shared: AppDelegate? {
-        return UIApplication.shared.delegate as? AppDelegate
-    }
-    
     func checkRegistrationFlow() {
-        
         if Utils.shared.getIsUserLogedIn() {
             setMainStoryBoard()
         } else {
@@ -75,16 +64,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Present the window
         self.window!.makeKeyAndVisible()
     }
-    
-    func setupThirdParty() {
-    }
-    
-    func setMainStoryBoard() {
         
+    func setMainStoryBoard() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let navigat = UINavigationController()
         navigat.isNavigationBarHidden = false
-        //
+        
         let mainStoryBoard = UIStoryboard(name: StoryBoard.main, bundle: nil)
         let galleryVc = mainStoryBoard.instantiateViewController(withIdentifier: Controller.galleryVC) as? GalleryViewController ?? GalleryViewController()
         
@@ -95,6 +80,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = navigat
         // Present the window
         self.window!.makeKeyAndVisible()
-        
     }
+    
+    func setupThirdParty() {
+    }
+
 }

@@ -21,12 +21,12 @@ class ProfileViewController: UIViewController {
     }
     
     func setupUI() {
+        navigationItem.title = "Profile"
+        self.navigationController?.navigationBar.tintColor = .black
         let userName = Utils.shared.getUserName()
         let userEmail = Utils.shared.getEmailId()
         emailLabel.text = userEmail
         nameLabel.text = userName
-        navigationItem.title = "Profile"
-        self.navigationController?.navigationBar.tintColor = .black
     }
     
     @IBAction func logoutAction(_ sender: UIButton) {

@@ -15,7 +15,7 @@ class GalleryViewController: UIViewController {
     
     var galleryList : [Hits]?
     var currentPage: Int = 1
-    var totalData = 0
+    var totalDataCountFetchPrevious = 0
     
     @IBOutlet weak var previewImageView: UIImageView!
     @IBOutlet weak var previewView: UIView!
@@ -78,9 +78,9 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
 
         if ((galleryList?.count ?? 0) - 2) == indexPath.item {
-            if totalData < galleryList?.count ?? 0 {
+            if totalDataCountFetchPrevious < galleryList?.count ?? 0 {
                 currentPage = currentPage + 1
-                totalData = galleryList?.count ?? 0
+                totalDataCountFetchPrevious = galleryList?.count ?? 0
                 viewModel.performApiCallingForGallery(page: "\(currentPage)")
             }
         }
