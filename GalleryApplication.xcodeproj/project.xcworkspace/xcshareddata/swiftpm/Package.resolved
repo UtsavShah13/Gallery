@@ -1,5 +1,5 @@
 {
-  "originHash" : "a56e2fe13d14f0434012cef1154cb27aecef19963b4a0ddcdb897272151a79a5",
+  "originHash" : "0dc4be56ba8dcdc6466a00db0009980c5969622bb30eae3c63a6da668fce6dca",
   "pins" : [
     {
       "identity" : "appauth-ios",
@@ -35,6 +35,15 @@
       "state" : {
         "revision" : "5d7d66f647400952b1758b230e019b07c0b4b22a",
         "version" : "4.1.1"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "f6afa0132961d593f07970d84e2d8b588c29ea04",
+        "version" : "5.19.1"
       }
     },
     {

@@ -24,11 +24,13 @@ struct StoryBoard {
 
 struct Controller {
     static let loginVC = "LoginViewController"
+    static let galleryVC = "GalleryViewController"
+    static let profileVC = "ProfileViewController"
 }
 
 // MARK: Cell
 struct Cell {
-
+ static let galleryCollectionViewCell = "GalleryCollectionViewCell"
 }
 
 // MARK: Header
@@ -40,7 +42,7 @@ struct Text {
 }
 
 struct Key {
-   static let googleClientId = "222496290584-2kfcm8v8ah214dnsfgq04d88nuo5neuk.apps.googleusercontent.com"
+   static let googleClientId = "222496290584-i4bqsqr3s07712gl0k4ems64t6fdhinv.apps.googleusercontent.com" // "222496290584-2kfcm8v8ah214dnsfgq04d88nuo5neuk.apps.googleusercontent.com"
 }
 
 struct Message {

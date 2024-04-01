@@ -9,7 +9,7 @@ import Foundation
 import GoogleSignIn
 
 protocol LoginViewModelDelegate : AnyObject {
-    func handleSocialSignInResponse()
+    func handleGoogleSignInResponse()
 }
 
 
@@ -25,18 +25,17 @@ class LoginViewModel: NSObject {
 extension LoginViewModel {
     
     func performApiCallingForSocialSignIn(controller: UIViewController) {
-        let signInConfig = GIDConfiguration(clientID: Key.googleClientId)
         
+        let signInConfig = GIDConfiguration(clientID: Key.googleClientId)
+        GIDSignIn.sharedInstance.configuration = signInConfig
+
         GIDSignIn.sharedInstance.signIn(withPresenting: controller) { signInResult, error in
           guard error == nil else { return }
-            self.delegate?.handleSocialSignInResponse()
-
-          // If sign in succeeded, display the app's main content View.
+            Utils.shared.saveUserLogedIn(true)
+            Utils.shared.saveEmailId(signInResult?.user.profile?.email ?? "")
+            Utils.shared.saveUserName(signInResult?.user.profile?.name ?? "")
+            self.delegate?.handleGoogleSignInResponse()
         }
 
     }
-
-//            guard let jsonResponse = response as? [String: Any] else { return }
-//            guard let jsonData = try? JSONSerialization.data(withJSONObject: jsonResponse) else { return }
-//            guard let signInModel : SignInWithEmailData = try? JSONDecoder().decode(SignInWithEmailData.self, from: jsonData) else { return GeneralUtility.showToast(message: "data not convert")}
 }

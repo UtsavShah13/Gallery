@@ -9,7 +9,6 @@ import UIKit
 import GoogleSignIn
 
 class LoginViewController: UIViewController {
-    
 
     private lazy var viewModel = LoginViewModel (
             delegate: self
@@ -18,7 +17,13 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    func moveToGalleryScreen() {
+        let storyBoard = UIStoryboard(name: StoryBoard.main, bundle: nil)
+        if let vc = storyBoard.instantiateViewController(withIdentifier: Controller.galleryVC) as? GalleryViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     
@@ -32,8 +37,8 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginViewModelDelegate {
     
-    func handleSocialSignInResponse() {
-        print("Success")
+    func handleGoogleSignInResponse() {
+        AppDelegate.shared?.setMainStoryBoard()
     }
 
 }

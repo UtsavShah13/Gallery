@@ -6,60 +6,48 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 extension Utils {
     
     private enum Key: String {
-        case accessToken
-        case authorizedUserInfo
+        case emailId
+        case userName
+        case isLogedIn
     }
     
     func resetUserData() {
-        UserDefaults.standard.removeObject(forKey: Key.authorizedUserInfo.rawValue)
-        UserDefaults.standard.removeObject(forKey: Key.accessToken.rawValue)
+        UserDefaults.standard.removeObject(forKey: Key.userName.rawValue)
+        UserDefaults.standard.removeObject(forKey: Key.emailId.rawValue)
+        UserDefaults.standard.removeObject(forKey: Key.isLogedIn.rawValue)
     }
     
-    func didSessionEnd() -> Bool {
-        let data = UserDefaults.standard.object(forKey: "isLogedIn") as? Bool
-        return data ?? false
+    func saveUserName(_ token: String) {
+        UserDefaults.standard.set(token, forKey: Key.userName.rawValue)
     }
     
-    func setSession(_ isSessionEnd: Bool?) {
-        UserDefaults.standard.set(isSessionEnd, forKey: "isSessionEnd")
-    }
-    
-//    func saveAuthorizedUserInfo(_ userInfo: User?) {
-//        let v = try? JSONEncoder().encode(userInfo)
-//        UserDefaults.standard.set(v, forKey: Key.authorizedUserInfo.rawValue)
-//    }
-//
-//    func getAuthorizedUserInfo() -> User? {
-//        if let data = UserDefaults.standard.object(forKey: Key.authorizedUserInfo.rawValue) as? Data {
-//            return try? JSONDecoder().decode(User.self, from: data)
-//        } else {
-//            return nil
-//        }
-//    }
-    
-    func saveAccessToken(_ token: String) {
-        UserDefaults.standard.set(token, forKey: Key.accessToken.rawValue)
+    func saveEmailId(_ token: String) {
+        UserDefaults.standard.set(token, forKey: Key.emailId.rawValue)
     }
 
-    func getAccessToken() -> String {
-        return UserDefaults.standard.object(forKey: Key.accessToken.rawValue) as? String ?? ""
+    
+    func getUserName() -> String {
+        let data = UserDefaults.standard.object(forKey: Key.userName.rawValue) as? String
+        return data ?? ""
     }
     
-    func isAuthorized() -> Bool {
-        return true
-//        getAuthorizedUserInfo() != nil
+    func getEmailId() -> String {
+        let data = UserDefaults.standard.object(forKey: Key.emailId.rawValue) as? String
+        return data ?? ""
     }
+
     
     func saveUserLogedIn(_ isLogedIn: Bool?) {
-        UserDefaults.standard.set(isLogedIn, forKey: "isLogedIn")
+        UserDefaults.standard.set(isLogedIn, forKey: Key.isLogedIn.rawValue)
     }
     
     func getIsUserLogedIn() -> Bool {
-        let data = UserDefaults.standard.object(forKey: "isLogedIn") as? Bool
+        let data = UserDefaults.standard.object(forKey: Key.isLogedIn.rawValue) as? Bool
         return data ?? false
     }
     

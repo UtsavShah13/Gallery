@@ -17,25 +17,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-CM-LmU">
-                                <rect key="frame" x="159" y="421" width="75" height="35"/>
+                                <rect key="frame" x="131.66666666666666" y="421" width="129.99999999999997" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Google Signin"/>
                                 <connections>
                                     <action selector="googleLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WBZ-ff-oBr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qM-oN-dJz">
+                                <rect key="frame" x="171.66666666666666" y="129" width="49.666666666666657" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3qM-oN-dJz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="70" id="DCr-Pn-1PL"/>
                             <constraint firstItem="AGV-CM-LmU" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="EYg-XA-4cl"/>
                             <constraint firstItem="AGV-CM-LmU" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="NnR-kN-SJ7"/>
+                            <constraint firstItem="3qM-oN-dJz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Wf3-QB-OUa"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="-2"/>
+            <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
