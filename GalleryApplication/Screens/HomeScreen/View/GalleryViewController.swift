@@ -49,6 +49,11 @@ class GalleryViewController: UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
+    // connvert data to image
+    func getImage(from data: Data) -> UIImage? {
+        return UIImage(data: data)
+    }
 
 //    MARK: - Button Actions
     
@@ -97,8 +102,15 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let path = URL(string: galleryList?[indexPath.item].largeImageURL ?? "")
-        previewImageView.sd_setImage(with: path)
+        
+        // Show offline image
+        let data = CoreDataManager.shared.fetch() as! [ImageList]
+        let val = data.filter { data in
+            return data.id == galleryList?[indexPath.item].id ?? 0
+        }
+        let imageData = val.first?.previewImage ?? Data()
+        let image = getImage(from: imageData)
+        previewImageView.image = image
         previewView.isHidden = false
     }
         
@@ -115,8 +127,17 @@ extension GalleryViewController: GalleryViewModelDelegate {
             } else {
                 galleryList?.append(contentsOf: responce.hits!)
             }
+            // Save images to core database
+            if let value = responce.hits {
+                for data in value {
+                    CoreDataManager.shared.createImageList(id: Int64(data.id ?? 0), previewImage: data.largeImageURL ?? "")
+                }
+            } else {
+                print("no data")
+            }
         }
         galleryCollectionView.reloadData()
+
     }
 
 }

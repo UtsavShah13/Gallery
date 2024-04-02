@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1D899F2BBC7E1B00550A76 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D899E2BBC7E1B00550A76 /* CoreDataManager.swift */; };
+		6F1D89A22BBC7F0000550A76 /* GalleryCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D89A02BBC7F0000550A76 /* GalleryCoreData.xcdatamodeld */; };
 		6FB118012BBB365E00CFF751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB118002BBB365E00CFF751 /* AppDelegate.swift */; };
 		6FF9AE5A2BB98248008815F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9AE392BB98248008815F9 /* Assets.xcassets */; };
 		6FF9AE5B2BB98248008815F9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE3B2BB98248008815F9 /* NetworkManager.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F1D899E2BBC7E1B00550A76 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6F1D89A12BBC7F0000550A76 /* GalleryCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GalleryCoreData.xcdatamodel; sourceTree = "<group>"; };
 		6FB118002BBB365E00CFF751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FF9AE1E2BB97FA0008815F9 /* GalleryApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF9AE2F2BB97FA2008815F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F1D899D2BBC7DFA00550A76 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				6F1D899E2BBC7E1B00550A76 /* CoreDataManager.swift */,
+				6F1D89A02BBC7F0000550A76 /* GalleryCoreData.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
 		6FB117FE2BBB33E100CFF751 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 		6FF9AE152BB97FA0008815F9 = {
 			isa = PBXGroup;
 			children = (
+				6F1D899D2BBC7DFA00550A76 /* CoreDataModel */,
 				6FF9AE202BB97FA0008815F9 /* GalleryApplication */,
 				6FF9AE1F2BB97FA0008815F9 /* Products */,
 			);
@@ -384,10 +398,12 @@
 				6FF9AE7B2BB9826D008815F9 /* TableViewExtension.swift in Sources */,
 				6FF9AE8D2BB98535008815F9 /* GalleryViewController.swift in Sources */,
 				6FF9AE782BB9826D008815F9 /* ColorExtension.swift in Sources */,
+				6F1D89A22BBC7F0000550A76 /* GalleryCoreData.xcdatamodeld in Sources */,
 				6FF9AE5B2BB98248008815F9 /* NetworkManager.swift in Sources */,
 				6FF9AE7D2BB9826D008815F9 /* UIDevice+Extension.swift in Sources */,
 				6FF9AE932BB99146008815F9 /* GalleryCollectionViewCell.swift in Sources */,
 				6FF9AE772BB9826D008815F9 /* AlertViewControllerExtension.swift in Sources */,
+				6F1D899F2BBC7E1B00550A76 /* CoreDataManager.swift in Sources */,
 				6FF9AE962BB99724008815F9 /* ProfileViewController.swift in Sources */,
 				6FF9AE9B2BB9B9EF008815F9 /* galleryModel.swift in Sources */,
 				6FF9AE792BB9826D008815F9 /* FontExtension.swift in Sources */,
@@ -674,6 +690,20 @@
 			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6F1D89A02BBC7F0000550A76 /* GalleryCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6F1D89A12BBC7F0000550A76 /* GalleryCoreData.xcdatamodel */,
+			);
+			currentVersion = 6F1D89A12BBC7F0000550A76 /* GalleryCoreData.xcdatamodel */;
+			name = GalleryCoreData.xcdatamodeld;
+			path = /Users/utsav/Documents/DATA/Gallery/CoreDataModel/GalleryCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6FF9AE162BB97FA0008815F9 /* Project object */;
 }

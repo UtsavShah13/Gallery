@@ -27,15 +27,35 @@ class ProfileViewController: UIViewController {
         let userEmail = Utils.shared.getEmailId()
         emailLabel.text = userEmail
         nameLabel.text = userName
+        
+        // fetch first image store in databaase to show as profile image
+        let data = CoreDataManager.shared.fetch() as! [ImageList]
+        let imageData = data.first?.previewImage ?? Data()
+        let image = getImage(from: imageData)
+        profieImageVIew.image = image
     }
     
-    @IBAction func logoutAction(_ sender: UIButton) {
+    
+    // convert data to image
+    func getImage(from data: Data) -> UIImage? {
+        return UIImage(data: data)
+    }
+    
+    func logout() {
         let signInConfig = GIDConfiguration(clientID: Key.googleClientId)
         GIDSignIn.sharedInstance.configuration = signInConfig
         GIDSignIn.sharedInstance.signOut()
         Utils.shared.resetUserData()
         AppDelegate.shared?.setAuthorizationStoryBoard()
+        CoreDataManager.shared.deleteAllData()
         navigationController?.popToRootViewController(animated: true)
+
+    }
+    
+//    MARK: - Button Action
+    
+    @IBAction func logoutAction(_ sender: UIButton) {
+        logout()
     }
     
 }
