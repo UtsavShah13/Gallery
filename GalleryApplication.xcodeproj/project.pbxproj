@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435B0ED9A4D2787BC49FA4C8 /* Pods_GalleryApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61CEEC2B16A1A01015F7863 /* Pods_GalleryApplication.framework */; };
 		6F1D899F2BBC7E1B00550A76 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D899E2BBC7E1B00550A76 /* CoreDataManager.swift */; };
 		6F1D89A22BBC7F0000550A76 /* GalleryCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D89A02BBC7F0000550A76 /* GalleryCoreData.xcdatamodeld */; };
 		6FB118012BBB365E00CFF751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB118002BBB365E00CFF751 /* AppDelegate.swift */; };
@@ -29,21 +30,17 @@
 		6FF9AE7C2BB9826D008815F9 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE732BB9826D008815F9 /* TextFieldExtension.swift */; };
 		6FF9AE7D2BB9826D008815F9 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE742BB9826D008815F9 /* UIDevice+Extension.swift */; };
 		6FF9AE7E2BB9826D008815F9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE752BB9826D008815F9 /* UIViewController.swift */; };
-		6FF9AE832BB982EC008815F9 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 6FF9AE822BB982EC008815F9 /* GoogleSignIn */; };
-		6FF9AE852BB982EC008815F9 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6FF9AE842BB982EC008815F9 /* GoogleSignInSwift */; };
-		6FF9AE882BB98305008815F9 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6FF9AE872BB98305008815F9 /* SVProgressHUD */; };
 		6FF9AE8D2BB98535008815F9 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE8C2BB98535008815F9 /* GalleryViewController.swift */; };
 		6FF9AE922BB99146008815F9 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9AE912BB99146008815F9 /* GalleryCollectionViewCell.xib */; };
 		6FF9AE932BB99146008815F9 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE902BB99146008815F9 /* GalleryCollectionViewCell.swift */; };
 		6FF9AE962BB99724008815F9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE952BB99724008815F9 /* ProfileViewController.swift */; };
 		6FF9AE9B2BB9B9EF008815F9 /* galleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE9A2BB9B9EF008815F9 /* galleryModel.swift */; };
 		6FF9AE9D2BB9BA6B008815F9 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9AE9C2BB9BA6B008815F9 /* GalleryViewModel.swift */; };
-		6FF9AEA02BB9BF2F008815F9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6FF9AE9F2BB9BF2F008815F9 /* SDWebImage */; };
-		6FF9AEA22BB9BF2F008815F9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6FF9AEA12BB9BF2F008815F9 /* SDWebImageMapKit */; };
 		6FF9AEA42BB9EC14008815F9 /* Google.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9AEA32BB9EC14008815F9 /* Google.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B65F22F3EF5DCF733550390 /* Pods-GalleryApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryApplication.debug.xcconfig"; path = "Target Support Files/Pods-GalleryApplication/Pods-GalleryApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		6F1D899E2BBC7E1B00550A76 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		6F1D89A12BBC7F0000550A76 /* GalleryCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GalleryCoreData.xcdatamodel; sourceTree = "<group>"; };
 		6FB118002BBB365E00CFF751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +72,8 @@
 		6FF9AE9A2BB9B9EF008815F9 /* galleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galleryModel.swift; sourceTree = "<group>"; };
 		6FF9AE9C2BB9BA6B008815F9 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		6FF9AEA32BB9EC14008815F9 /* Google.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Google.plist; sourceTree = "<group>"; };
+		B868B380EDEB8629E527F225 /* Pods-GalleryApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryApplication.release.xcconfig"; path = "Target Support Files/Pods-GalleryApplication/Pods-GalleryApplication.release.xcconfig"; sourceTree = "<group>"; };
+		C61CEEC2B16A1A01015F7863 /* Pods_GalleryApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GalleryApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,17 +81,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF9AE882BB98305008815F9 /* SVProgressHUD in Frameworks */,
-				6FF9AEA22BB9BF2F008815F9 /* SDWebImageMapKit in Frameworks */,
-				6FF9AE832BB982EC008815F9 /* GoogleSignIn in Frameworks */,
-				6FF9AEA02BB9BF2F008815F9 /* SDWebImage in Frameworks */,
-				6FF9AE852BB982EC008815F9 /* GoogleSignInSwift in Frameworks */,
+				435B0ED9A4D2787BC49FA4C8 /* Pods_GalleryApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04D1D8D8082E9807D4BC8AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C61CEEC2B16A1A01015F7863 /* Pods_GalleryApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F1D899D2BBC7DFA00550A76 /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +125,8 @@
 				6F1D899D2BBC7DFA00550A76 /* CoreDataModel */,
 				6FF9AE202BB97FA0008815F9 /* GalleryApplication */,
 				6FF9AE1F2BB97FA0008815F9 /* Products */,
+				E79A0D78C4790B8FFC33E58E /* Pods */,
+				04D1D8D8082E9807D4BC8AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,6 +311,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E79A0D78C4790B8FFC33E58E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B65F22F3EF5DCF733550390 /* Pods-GalleryApplication.debug.xcconfig */,
+				B868B380EDEB8629E527F225 /* Pods-GalleryApplication.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,9 +327,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FF9AE322BB97FA2008815F9 /* Build configuration list for PBXNativeTarget "GalleryApplication" */;
 			buildPhases = (
+				B775B3B72A88B0E913B85B67 /* [CP] Check Pods Manifest.lock */,
 				6FF9AE1A2BB97FA0008815F9 /* Sources */,
 				6FF9AE1B2BB97FA0008815F9 /* Frameworks */,
 				6FF9AE1C2BB97FA0008815F9 /* Resources */,
+				5134A36C5BBC6220E7FAA030 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,11 +339,6 @@
 			);
 			name = GalleryApplication;
 			packageProductDependencies = (
-				6FF9AE822BB982EC008815F9 /* GoogleSignIn */,
-				6FF9AE842BB982EC008815F9 /* GoogleSignInSwift */,
-				6FF9AE872BB98305008815F9 /* SVProgressHUD */,
-				6FF9AE9F2BB9BF2F008815F9 /* SDWebImage */,
-				6FF9AEA12BB9BF2F008815F9 /* SDWebImageMapKit */,
 			);
 			productName = GalleryApplication;
 			productReference = 6FF9AE1E2BB97FA0008815F9 /* GalleryApplication.app */;
@@ -358,9 +369,6 @@
 			);
 			mainGroup = 6FF9AE152BB97FA0008815F9;
 			packageReferences = (
-				6FF9AE812BB982EC008815F9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				6FF9AE862BB98305008815F9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
-				6FF9AE9E2BB9BF2F008815F9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 6FF9AE1F2BB97FA0008815F9 /* Products */;
 			projectDirPath = "";
@@ -386,6 +394,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5134A36C5BBC6220E7FAA030 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GalleryApplication/Pods-GalleryApplication-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GalleryApplication/Pods-GalleryApplication-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GalleryApplication/Pods-GalleryApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B775B3B72A88B0E913B85B67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GalleryApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FF9AE1A2BB97FA0008815F9 /* Sources */ = {
@@ -561,11 +611,13 @@
 		};
 		6FF9AE332BB97FA2008815F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B65F22F3EF5DCF733550390 /* Pods-GalleryApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GalleryApplication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -573,6 +625,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,11 +641,13 @@
 		};
 		6FF9AE342BB97FA2008815F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B868B380EDEB8629E527F225 /* Pods-GalleryApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GalleryApplication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -600,6 +655,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,61 +691,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6FF9AE812BB982EC008815F9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.1.0;
-			};
-		};
-		6FF9AE862BB98305008815F9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.1;
-			};
-		};
-		6FF9AE9E2BB9BF2F008815F9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.19.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6FF9AE822BB982EC008815F9 /* GoogleSignIn */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6FF9AE812BB982EC008815F9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignIn;
-		};
-		6FF9AE842BB982EC008815F9 /* GoogleSignInSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6FF9AE812BB982EC008815F9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignInSwift;
-		};
-		6FF9AE872BB98305008815F9 /* SVProgressHUD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6FF9AE862BB98305008815F9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
-			productName = SVProgressHUD;
-		};
-		6FF9AE9F2BB9BF2F008815F9 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6FF9AE9E2BB9BF2F008815F9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		6FF9AEA12BB9BF2F008815F9 /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6FF9AE9E2BB9BF2F008815F9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6F1D89A02BBC7F0000550A76 /* GalleryCoreData.xcdatamodeld */ = {
